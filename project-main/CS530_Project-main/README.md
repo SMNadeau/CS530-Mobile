@@ -1,0 +1,4 @@
+# Voluntary Spam App
+The Voluntary Spam application is designed as a framework that can be configured for a central body, such as a non-profit organization, to be able to manage a shared calendar and send notications to users about the events on that calendar. These events can be tagged with categories such that notifications about these events are sent to the users subscribed to that particular tag. Users of this framework can subscribe to different categories a companion [mobile application](https://github.com/Team-Stepping-On-Legos/CS530_Project_Mobile) from which they will also recieve notifications tagged with the categories that the user had subscribed to. 
+
+Additional information regarding the use of the application, its design, and instructions on how it can be configured for use in new projects can be found in the [Wiki](https://github.com/Team-Stepping-On-Legos/CS530_Project/wiki) associated with this repository.
