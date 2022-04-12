@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the canTransitionTo method from the CustomPageRoute class, for the Dart programming language.">
+  <title>canTransitionTo method - CustomPageRoute class - custom_page_route library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">cs530_mobile</a></li>
+    <li><a href="../../controllers_custom_page_route/controllers_custom_page_route-library.html">custom_page_route</a></li>
+    <li><a href="../../controllers_custom_page_route/CustomPageRoute-class.html">CustomPageRoute<span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></a></li>
+    <li class="self-crumb">canTransitionTo method</li>
+  </ol>
+  <div class="self-name">canTransitionTo</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">canTransitionTo</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+<div>
+  <ol class="annotation-list">
+    <li>@<a href="https://api.dart.dev/stable/2.14.4/dart-core/override-constant.html">override</a></li>
+  </ol>
+</div>
+
+<span class="returntype"><a href="https://api.dart.dev/stable/2.14.4/dart-core/bool-class.html">bool</a></span>
+<span class="name ">canTransitionTo</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="canTransitionTo-param-nextRoute"><span class="type-annotation">TransitionRoute</span> <span class="parameter-name">nextRoute</span></span></li>
+</ol>)
+
+      <div class="features">inherited</div>
+
+    </section>
+    
+<section class="desc markdown">
+  <p>Returns true if this route supports a transition animation that runs
+when <code>nextRoute</code> is pushed on top of it or when <code>nextRoute</code> is popped
+off of it.</p>
+<p>Subclasses can override this method to restrict the set of routes they
+need to coordinate transitions with.</p>
+<p>If true, and <code>nextRoute.canTransitionFrom()</code> is true, then the
+<code>ModalRoute.buildTransitions</code> <code>secondaryAnimation</code> will run from 0.0 - 1.0
+when <code>nextRoute</code> is pushed on top of this one.  Similarly, if
+the <code>nextRoute</code> is popped off of this route, the
+<code>secondaryAnimation</code> will run from 1.0 - 0.0.</p>
+<p>If false, this route's <code>ModalRoute.buildTransitions</code> <code>secondaryAnimation</code> parameter
+value will be <code>kAlwaysDismissedAnimation</code>. In other words, this route
+will not animate when <code>nextRoute</code> is pushed on top of it or when
+<code>nextRoute</code> is popped off of it.</p>
+<p>Returns true by default.</p>
+<p>See also:</p>
+<ul>
+<li><a href="../../controllers_custom_page_route/CustomPageRoute/canTransitionFrom.html">canTransitionFrom</a>, which must be true for <code>nextRoute</code> for the
+<code>ModalRoute.buildTransitions</code> <code>secondaryAnimation</code> to run.</li>
+</ul>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">@override
+bool canTransitionTo(TransitionRoute&lt;dynamic&gt; nextRoute) =&gt; nextRoute is PageRoute;</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">cs530_mobile</a></li>
+  <li><a href="../../controllers_custom_page_route/controllers_custom_page_route-library.html">custom_page_route</a></li>
+  <li><a href="../../controllers_custom_page_route/CustomPageRoute-class.html">CustomPageRoute<span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></a></li>
+  <li class="self-crumb">canTransitionTo method</li>
+</ol>
+
+
+    <h5>CustomPageRoute class</h5>
+    <ol>
+
+    <li class="section-title"><a href="../../controllers_custom_page_route/CustomPageRoute-class.html#constructors">Constructors</a></li>
+    <li><a href="../../controllers_custom_page_route/CustomPageRoute/CustomPageRoute.html">CustomPageRoute</a></li>
+
+
+    <li class="section-title">
+      <a href="../../controllers_custom_page_route/CustomPageRoute-class.html#instance-properties">Properties</a>
+    </li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/animation.html">animation</a></li>
+    <li><a href="../../controllers_custom_page_route/CustomPageRoute/barrierColor.html">barrierColor</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/barrierCurve.html">barrierCurve</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/barrierDismissible.html">barrierDismissible</a></li>
+    <li><a href="../../controllers_custom_page_route/CustomPageRoute/barrierLabel.html">barrierLabel</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/canPop.html">canPop</a></li>
+    <li><a href="../../controllers_custom_page_route/CustomPageRoute/child.html">child</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/completed.html">completed</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/controller.html">controller</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/currentResult.html">currentResult</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/debugLabel.html">debugLabel</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/filter.html">filter</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/finishedWhenPopped.html">finishedWhenPopped</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/fullscreenDialog.html">fullscreenDialog</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/hasActiveRouteBelow.html">hasActiveRouteBelow</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.14.4/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/hasScopedWillPopCallback.html">hasScopedWillPopCallback</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/isActive.html">isActive</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/isCurrent.html">isCurrent</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/isFirst.html">isFirst</a></li>
+    <li><a href="../../controllers_custom_page_route/CustomPageRoute/maintainState.html">maintainState</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/navigator.html">navigator</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/offstage.html">offstage</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/opaque.html">opaque</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/overlayEntries.html">overlayEntries</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/popped.html">popped</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/restorationScopeId.html">restorationScopeId</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/reverseTransitionDuration.html">reverseTransitionDuration</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.14.4/dart-core/Object/runtimeType.html">runtimeType</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/secondaryAnimation.html">secondaryAnimation</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/semanticsDismissible.html">semanticsDismissible</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/settings.html">settings</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/subtreeContext.html">subtreeContext</a></li>
+    <li><a href="../../controllers_custom_page_route/CustomPageRoute/transitionDuration.html">transitionDuration</a></li>
+    <li><a href="../../controllers_custom_page_route/CustomPageRoute/type.html">type</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/willHandlePopInternally.html">willHandlePopInternally</a></li>
+
+    <li class="section-title"><a href="../../controllers_custom_page_route/CustomPageRoute-class.html#instance-methods">Methods</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/addLocalHistoryEntry.html">addLocalHistoryEntry</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/addScopedWillPopCallback.html">addScopedWillPopCallback</a></li>
+    <li><a href="../../controllers_custom_page_route/CustomPageRoute/buildPage.html">buildPage</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/buildTransitions.html">buildTransitions</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/canTransitionFrom.html">canTransitionFrom</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/canTransitionTo.html">canTransitionTo</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/changedExternalState.html">changedExternalState</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/changedInternalState.html">changedInternalState</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/createAnimation.html">createAnimation</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/createAnimationController.html">createAnimationController</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/createOverlayEntries.html">createOverlayEntries</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/didAdd.html">didAdd</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/didChangeNext.html">didChangeNext</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/didChangePrevious.html">didChangePrevious</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/didComplete.html">didComplete</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/didPop.html">didPop</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/didPopNext.html">didPopNext</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/didPush.html">didPush</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/didReplace.html">didReplace</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/dispose.html">dispose</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/install.html">install</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.14.4/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/removeLocalHistoryEntry.html">removeLocalHistoryEntry</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/removeScopedWillPopCallback.html">removeScopedWillPopCallback</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/setState.html">setState</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/toString.html">toString</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/willPop.html">willPop</a></li>
+
+    <li class="section-title inherited"><a href="../../controllers_custom_page_route/CustomPageRoute-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.14.4/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    cs530_mobile
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

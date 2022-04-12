@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the barrierDismissible property from the CustomPageRoute class, for the Dart programming language.">
+  <title>barrierDismissible property - CustomPageRoute class - custom_page_route library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">cs530_mobile</a></li>
+    <li><a href="../../controllers_custom_page_route/controllers_custom_page_route-library.html">custom_page_route</a></li>
+    <li><a href="../../controllers_custom_page_route/CustomPageRoute-class.html">CustomPageRoute<span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></a></li>
+    <li class="self-crumb">barrierDismissible property</li>
+  </ol>
+  <div class="self-name">barrierDismissible</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-property">barrierDismissible</span> property 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+
+        
+<section id="getter">
+
+<section class="multi-line-signature">
+  <span class="returntype"><a href="https://api.dart.dev/stable/2.14.4/dart-core/bool-class.html">bool</a></span>
+  <span class="name ">barrierDismissible</span>
+  <div class="features">inherited</div>
+
+</section>
+
+
+<section class="desc markdown">
+  <p>Whether you can dismiss this route by tapping the modal barrier.</p>
+<p>The modal barrier is the scrim that is rendered behind each route, which
+generally prevents the user from interacting with the route below the
+current route, and normally partially obscures such routes.</p>
+<p>For example, when a dialog is on the screen, the page below the dialog is
+usually darkened by the modal barrier.</p>
+<p>If <a href="../../controllers_custom_page_route/CustomPageRoute/barrierDismissible.html">barrierDismissible</a> is true, then tapping this barrier will cause the
+current route to be popped (see <code>Navigator.pop</code>) with null as the value.</p>
+<p>If <a href="../../controllers_custom_page_route/CustomPageRoute/barrierDismissible.html">barrierDismissible</a> is false, then tapping the barrier has no effect.</p>
+<p>If this getter would ever start returning a different value,
+either <a href="../../controllers_custom_page_route/CustomPageRoute/changedInternalState.html">changedInternalState</a> or <a href="../../controllers_custom_page_route/CustomPageRoute/changedExternalState.html">changedExternalState</a> should
+be invoked so that the change can take effect.</p>
+<p>It is safe to use <code>navigator.context</code> to look up inherited
+widgets here, because the <code>Navigator</code> calls
+<a href="../../controllers_custom_page_route/CustomPageRoute/changedExternalState.html">changedExternalState</a> whenever its dependencies change, and
+<a href="../../controllers_custom_page_route/CustomPageRoute/changedExternalState.html">changedExternalState</a> causes the modal barrier to rebuild.</p>
+<p>See also:</p>
+<ul>
+<li><a href="../../controllers_custom_page_route/CustomPageRoute/barrierColor.html">barrierColor</a>, which controls the color of the scrim for this route.</li>
+<li><code>ModalBarrier</code>, the widget that implements this feature.</li>
+</ul>
+</section>
+
+
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">@override
+bool get barrierDismissible =&gt; false;</code></pre>
+</section>
+
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">cs530_mobile</a></li>
+  <li><a href="../../controllers_custom_page_route/controllers_custom_page_route-library.html">custom_page_route</a></li>
+  <li><a href="../../controllers_custom_page_route/CustomPageRoute-class.html">CustomPageRoute<span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></a></li>
+  <li class="self-crumb">barrierDismissible property</li>
+</ol>
+
+
+    <h5>CustomPageRoute class</h5>
+    <ol>
+
+    <li class="section-title"><a href="../../controllers_custom_page_route/CustomPageRoute-class.html#constructors">Constructors</a></li>
+    <li><a href="../../controllers_custom_page_route/CustomPageRoute/CustomPageRoute.html">CustomPageRoute</a></li>
+
+
+    <li class="section-title">
+      <a href="../../controllers_custom_page_route/CustomPageRoute-class.html#instance-properties">Properties</a>
+    </li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/animation.html">animation</a></li>
+    <li><a href="../../controllers_custom_page_route/CustomPageRoute/barrierColor.html">barrierColor</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/barrierCurve.html">barrierCurve</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/barrierDismissible.html">barrierDismissible</a></li>
+    <li><a href="../../controllers_custom_page_route/CustomPageRoute/barrierLabel.html">barrierLabel</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/canPop.html">canPop</a></li>
+    <li><a href="../../controllers_custom_page_route/CustomPageRoute/child.html">child</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/completed.html">completed</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/controller.html">controller</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/currentResult.html">currentResult</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/debugLabel.html">debugLabel</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/filter.html">filter</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/finishedWhenPopped.html">finishedWhenPopped</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/fullscreenDialog.html">fullscreenDialog</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/hasActiveRouteBelow.html">hasActiveRouteBelow</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.14.4/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/hasScopedWillPopCallback.html">hasScopedWillPopCallback</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/isActive.html">isActive</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/isCurrent.html">isCurrent</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/isFirst.html">isFirst</a></li>
+    <li><a href="../../controllers_custom_page_route/CustomPageRoute/maintainState.html">maintainState</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/navigator.html">navigator</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/offstage.html">offstage</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/opaque.html">opaque</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/overlayEntries.html">overlayEntries</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/popped.html">popped</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/restorationScopeId.html">restorationScopeId</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/reverseTransitionDuration.html">reverseTransitionDuration</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.14.4/dart-core/Object/runtimeType.html">runtimeType</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/secondaryAnimation.html">secondaryAnimation</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/semanticsDismissible.html">semanticsDismissible</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/settings.html">settings</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/subtreeContext.html">subtreeContext</a></li>
+    <li><a href="../../controllers_custom_page_route/CustomPageRoute/transitionDuration.html">transitionDuration</a></li>
+    <li><a href="../../controllers_custom_page_route/CustomPageRoute/type.html">type</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/willHandlePopInternally.html">willHandlePopInternally</a></li>
+
+    <li class="section-title"><a href="../../controllers_custom_page_route/CustomPageRoute-class.html#instance-methods">Methods</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/addLocalHistoryEntry.html">addLocalHistoryEntry</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/addScopedWillPopCallback.html">addScopedWillPopCallback</a></li>
+    <li><a href="../../controllers_custom_page_route/CustomPageRoute/buildPage.html">buildPage</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/buildTransitions.html">buildTransitions</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/canTransitionFrom.html">canTransitionFrom</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/canTransitionTo.html">canTransitionTo</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/changedExternalState.html">changedExternalState</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/changedInternalState.html">changedInternalState</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/createAnimation.html">createAnimation</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/createAnimationController.html">createAnimationController</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/createOverlayEntries.html">createOverlayEntries</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/didAdd.html">didAdd</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/didChangeNext.html">didChangeNext</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/didChangePrevious.html">didChangePrevious</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/didComplete.html">didComplete</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/didPop.html">didPop</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/didPopNext.html">didPopNext</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/didPush.html">didPush</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/didReplace.html">didReplace</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/dispose.html">dispose</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/install.html">install</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.14.4/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/removeLocalHistoryEntry.html">removeLocalHistoryEntry</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/removeScopedWillPopCallback.html">removeScopedWillPopCallback</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/setState.html">setState</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/toString.html">toString</a></li>
+    <li class="inherited"><a href="../../controllers_custom_page_route/CustomPageRoute/willPop.html">willPop</a></li>
+
+    <li class="section-title inherited"><a href="../../controllers_custom_page_route/CustomPageRoute-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.14.4/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    cs530_mobile
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+
